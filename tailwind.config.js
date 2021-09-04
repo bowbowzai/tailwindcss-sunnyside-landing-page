@@ -18,10 +18,10 @@ module.exports = {
                 'background-color-cyan': '#3dbeff'
             },
             backgroundImage: theme => ({
-                'graphic-design': "url(/images/desktop/image-graphic-design.jpg)",
-                'photography': "url(/images/desktop/image-photography.jpg)",
-                'mobile-graphic-design': "url(/images/mobile/image-graphic-design.jpg)",
-                'mobile-photography': "url(/images/mobile/image-photography.jpg)",
+                'graphic-design': "url('/images/desktop/image-graphic-design.jpg')",
+                'photography': "url('/images/desktop/image-photography.jpg')",
+                'mobile-graphic-design': "url('/images/mobile/image-graphic-design.jpg')",
+                'mobile-photography': "url('/images/mobile/image-photography.jpg')",
             })
         },
 
