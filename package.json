@@ -1,0 +1,22 @@
+{
+    "name": "tailwind_sunnyside_landing_page",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build:css": "postcss style.css -o css/compiled.css",
+        "build": "NODE_ENV=production postcss style.css -o build/compiled.css"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "autoprefixer": "^10.3.4",
+        "postcss": "^8.3.6",
+        "tailwindcss": "^2.2.9"
+    },
+    "dependencies": {
+        "postcss-cli": "^8.3.1"
+    }
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/compiled.css">
+    <title>Document</title>
+    <style>
+        .active {
+            transition: all 0.9s;
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .hide {
+            transition: all 0.9s;
+            height: 0px;
+            overflow: hidden;
+        }
+        
+        .triangleHide {
+            border-bottom: 0px solid transparent;
+        }
+        
+        .activeTriangle {
+            transition: all 0.9s;
+            border-bottom: 40px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <header style="background: url(images/desktop/image-header.jpg) no-repeat center bottom 36% #3dbeff; background-size: 1300px;" class="h-60vh py-10 px-8 lg:px-14 bg-bottom bg-no-repeat bg-contain flex flex-col">
+        <nav class="flex justify-between items-center relative">
+            <img src="images/logo.svg" alt="">
+            <ul class="hidden lg:flex text-white">
+                <li class="px-5 py-2 cursor-pointer">About</li>
+                <li class="px-5 py-2 cursor-pointer">Services</li>
+                <li class="px-5 py-2 cursor-pointer">Projects</li>
+                <li class="px-5 py-2 font-fraunces text-black bg-white rounded-full trabsition duration-200 hover:opacity-70 cursor-pointer">CONTACT</li>
+            </ul>
+            <img src="images/icon-hamburger.svg" alt="" class="lg:hidden cursor-pointer hamburger">
+            <div class="absolute w-4/5 bg-white h-auto left-50 transform -translate-x-1/2 top-16  lg:hidden">
+                <div class="relative">
+                    <ul class="hide ul">
+                        <li class="py-5 px-3 text-center">About</li>
+                        <li class="py-5 px-3 text-center">Services</li>
+                        <li class="py-5 px-3 text-center">Projects</li>
+                        <li class="py-5 px-3 text-center">CONTACT</li>
+                    </ul>
+                    <div class="arrow triangleHide triangle absolute -right-5 -top-5 z-50"></div>
+                </div>
+
+            </div>
+        </nav>
+        <h1 class=" mt-10 self-center font-fraunces font-extrabold text-2xl lg:text-5xl uppercase text-white tracking-wider">We are creatives</h1>
+        <img src="images/icon-arrow-down.svg" alt="" class="w-5 lg:w-10 mt-10 self-center">
+    </header>
+    <!-- content -->
+    <div class="flex flex-col lg:grid lg:grid-cols-2 lg:grid-rows-1 w-full h-auto">
+        <div class="lg:hidden h-80 w-full">
+            <img src="images/mobile/image-transform.jpg" alt="" class="w-full h-80">
+        </div>
+        <div class="w-full h-auto lg:h-150 flex flex-col justify-center px-10 lg:px-40 py-10 lg:py-40">
+            <h3 class="font-bold text-3xl lg:text-5xl font-fraunces mb-16">Transform your brand</h3>
+            <p class="text-xl lg:text-2xl mb-16">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+            <a href="" class="w-max font-bold font-fraunces text-xl group relative ">
+                <div class="z-50">Learn more</div>
+                <span class="hidden group-hover:block opacity-70 w-32 h-2 bg-yellow-500 absolute  -left-1.5 top-5 z-10 rounded-full"></span>
+            </a>
+        </div>
+        <div class="hidden lg:block bg-yellow-100 w-full">
+            <img src="images/desktop/image-transform.jpg" alt="" class="w-full h-150">
+        </div>
+
+    </div>
+    <div class="flex flex-col lg:grid lg:grid-cols-2 lg:grid-rows-1 w-full h-auto">
+        <div class="lg:hidden h-80 w-full">
+            <img src="images/mobile/image-stand-out.jpg" alt="" class="w-full h-80">
+        </div>
+        <div class="hidden lg:block w-full">
+            <img src="images/desktop/image-stand-out.jpg" alt="" class="w-full h-150">
+        </div>
+        <div class="w-full h-auto lg:h-150 flex flex-col justify-center px-20 lg:px-40 py-10 lg:py-40">
+            <h3 class="font-bold text-2xl lg:text-5xl font-fraunces mb-16">Stand out to the right audience</h3>
+            <p class="text-xl lg:text-2xl mb-16">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+            <a href="" class="w-max font-bold font-fraunces text-xl group relative ">
+                <div class="z-50">Learn more</div>
+                <span class="hidden group-hover:block opacity-70 w-32 h-2 bg-red-300 absolute  -left-1.5 top-5 z-10 rounded-full"></span>
+            </a>
+        </div>
+    </div>
+    <!-- graphic design -->
+    <div class="flex flex-col w-full h-auto lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:h-150">
+        <div style="background-size: cover; background-position:top center;" class="bg-no-repeat w-full gird grid-cols-1 grid-rows-2 h-full bg-cover bg-mobile-graphic-design lg:bg-graphic-design">
+            <div class="grid grid-rows-2 h-full">
+                <div class="h-1/2"></div>
+                <div class="h-1/2 text-center mt-28">
+                    <h3 class="text-5xl font-fraunces  mt-5 mb-10">Graphic design</h3>
+                    <p class="ml-50 pb-10 lg:text-lg transform -translate-x-1/2 font-medium">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention. </p>
+                </div>
+            </div>
+        </div>
+        <div style="background-position:top center;" class="bg-no-repeat w-full gird grid-cols-1 grid-rows-2 h-full bg-mobile-photography lg:bg-photography bg-cover">
+            <div class="grid grid-rows-2 h-full">
+                <div class="h-1/2"></div>
+                <div class="h-1/2 text-center mt-28">
+                    <h3 class="text-5xl font-fraunces mb-10 mt-5">Photography </h3>
+                    <p class="ml-50 text-lg transform -translate-x-1/2 font-medium pb-10 lg:pb-0">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- testimonial -->
+    <div class="flex flex-col h-auto py-28 px-20 lg:px-40">
+        <h1 class="uppercase text-center text-2xl font-fraunces text-gray-400 tracking-widest mb-20">client testimonials</h1>
+        <div class="grid grid-cols-1 grid-rows-3 gap-y-32 lg:gap-0 lg:grid-cols-3 lg:grid-rows-1 justify-center items-center">
+            <div class="flex flex-col items-center">
+                <img src="images/image-emily.jpg" alt="" class="rounded-full w-20">
+                <p class="my-10 text-lg font-medium text-purple-900 w-64 text-center">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+                <h4 class="font-extrabold font-fraunces text-xl mb-3">Emily R.</h4>
+                <span class="text-gray-500">Marketing Director</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="images/image-jennie.jpg" alt="" class="rounded-full w-20">
+                <p class="my-10 text-lg font-medium text-purple-900 w-64 text-center">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+                <h4 class="font-extrabold font-fraunces text-xl mb-3">Jennie F.</h4>
+                <span class="text-gray-500">Business Owner</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="images/image-thomas.jpg" alt="" class="rounded-full w-20">
+                <p class="my-10 text-lg font-medium text-purple-900 w-64 text-center">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+                <h4 class="font-extrabold font-fraunces text-xl mb-3">Thomas S.</h4>
+                <span class="text-gray-500">Chief Operating Officer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- pictures -->
+    <div class="grid grid-cols-2 grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 w-full h-auto">
+        <img src="images/desktop/image-gallery-milkbottles.jpg" alt="" class="w-full">
+        <img src="images/desktop/image-gallery-orange.jpg" alt="" class="w-full">
+        <img src="images/desktop/image-gallery-cone.jpg" alt="" class="w-full">
+        <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="" class="w-full">
+    </div>
+
+    <footer class="grid grid-cols-1 grid-rows-3 py-12 px-10 lg:px-44 bg-green-200 h-auto content-center text-center items-center">
+        <h1 class="text-5xl font-extrabold font-fraunces text-green-900 mb-20">sunnyside</h1>
+        <ul class="flex justify-center text-green-800">
+            <li class="py-4 px-5 text-xl hover:text-white cursor-pointer">About</li>
+            <li class="py-4 px-5 text-xl hover:text-white cursor-pointer">Services</li>
+            <li class="py-4 px-5 text-xl hover:text-white cursor-pointer">Projects</li>
+        </ul>
+        <div class="flex justify-center">
+            <img src="images/icon-facebook.svg" alt="" class="mx-3 cursor-pointer ">
+            <img src="images/icon-instagram.svg" alt="" class="mx-3 cursor-pointer">
+            <img src="images/icon-twitter.svg" alt="" class="mx-3 cursor-pointer">
+            <img src="images/icon-pinterest.svg" alt="" class="mx-3 cursor-pointer">
+        </div>
+        <span>Challenge by <a href="https://www.frontendmentor.io/solutions" class="text-purple-700 underline">Frontend Mentor</a>.Coded by <a href="https://github.com/" class="text-purple-700 underline">jupeng2015@gmail.com</a>.</span>
+    </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const ul = document.querySelector('.ul');
+        const arrow = document.querySelector('.arrow');
+        hamburger.onclick = function() {
+            ul.classList.toggle('active')
+            ul.classList.toggle('hide')
+            arrow.classList.toggle('triangleHide')
+            arrow.classList.toggle('activeTriangle')
+        }
+    </script>
+</body>
+
+</html>
